@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/identification.css">
+    <script src="jquery-3.6.0.js"></script>
+    <title>Identification</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <div class="cont">
+        <div class="form sign-in">
+            <h2>Bienvenue</h2>
+            <label>
+                <span>Couriel</span>
+                <input type="email" />
+            </label>
+            <label>
+                <span>Mot de pass</span>
+                <input type="password" />
+            </label>
+            <p class="forgot-pass">Mot de passe oublié ?</p>
+            <button type="button" class="submit">Se connecter</button>
+
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+
+                    <h3>Vous n'avez pas de compte, <br> enregistrez-vous.<h3>
+                </div>
+                <div class="img__text m--in">
+
+                    <h3>Si vous avez un compte, <br> identifiez vous.<h3>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">S'enregistrer</span>
+                    <span class="m--in">Se connecter</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <h2>Creez votre compte</h2>
+                <label>
+                    <span>Nom</span>
+                    <input type="text" />
+                </label>
+                <label>
+                    <span>Couriel</span>
+                    <input type="email" />
+                </label>
+                <label>
+                    <span>Mot de passe</span>
+                    <input type="password" />
+                </label>
+                <button type="button" class="submit">S'enregistrer</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function () {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
+</body>
+
+</html>
